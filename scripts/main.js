@@ -51,9 +51,9 @@ const buttonFilter = (event) => {
     let table = `<table class="table table-dark table-striped" style="width: 600px">
     <thead>
       <tr>
-        <th scope="col">${productList.title}</th>
-        <th scope="col">${productList.type}</th>
-        <th scope="col">${productList.price}</th>
+        <th scope="col">Title</th>
+        <th scope="col">Type</th>
+        <th scope="col">Price</th>
       </tr>
     </thead>
     <tbody>
