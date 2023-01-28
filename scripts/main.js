@@ -26,7 +26,13 @@ const toggleCart = (event) => {
 // .filter()
 const search = (event) => {
   const eventLC = event.target.value.toLowerCase();
-  console.log(eventLC)
+  const searchResult = referenceList.filter(item => 
+    item.title.toLowerCase().includes(eventLC) ||
+    item.author.toLowerCase().includes(eventLC)||
+    item.description.toLowerCase().includes(eventLC)
+  )
+
+  renderCards(searchResult);
 }
 
 // BUTTON FILTER
