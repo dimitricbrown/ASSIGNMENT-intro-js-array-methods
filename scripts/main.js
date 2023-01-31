@@ -71,7 +71,9 @@ const buttonFilter = (event) => {
     <tbody>
     `;
     
-    productList().forEach(item => {
+    //LOOK UP localCompare()
+    productList().sort((a, b) => a.type.localeCompare(b.type))
+    .forEach(item => {
       table += tableRow(item);
     });
 
